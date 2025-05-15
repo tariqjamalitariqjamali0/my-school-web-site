@@ -1,137 +1,278 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My School</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Dilpasand Mithai 
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
   <style>
-    .hero {
-      background: url('https://source.unsplash.com/1600x500/?school,students') no-repeat center center;
-      background-size: cover;
-      color: white;
-      padding: 100px 0;
-      text-align: center;
+   body {
+      font-family: 'Roboto', sans-serif;
     }
-    .card-img-top {
-      height: 150px;
-      object-fit: cover;
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Baloo 2', cursive;
     }
   </style>
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">My School</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+ </head>
+ <body class="bg-gray-50 text-gray-900">
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a class="flex items-center space-x-3" href="#">
+     <img alt="Dilpasand Mithai Waly logo with stylized letters DM in golden color on white background" class="w-12 h-12 rounded-full" height="48" src="https://storage.googleapis.com/a1aa/image/3b92eb8e-d15b-420e-f535-5c63e1adb3f0.jpg" width="48"/>
+     <span class="text-2xl font-bold text-yellow-600">
+      Dilpasand Mithai
+     </span>
+    </a>
+    <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+     <a class="hover:text-yellow-600 transition" href="#home">
+      Home
+     </a>
+     <a class="hover:text-yellow-600 transition" href="#about">
+      About Us
+     </a>
+     <a class="hover:text-yellow-600 transition" href="#products">
+      Products
+     </a>
+     <a class="hover:text-yellow-600 transition" href="#gallery">
+      Gallery
+     </a>
+     <a class="hover:text-yellow-600 transition" href="#contact">
+      Contact
+     </a>
+    </nav>
+    <div class="md:hidden">
+     <button aria-label="Toggle menu" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500" id="menu-btn">
+      <i class="fas fa-bars fa-lg">
+      </i>
+     </button>
     </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="display-4">Welcome to My School</h1>
-      <p class="lead">Nurturing Minds, Building Futures</p>
-    </div>
+   </div>
+   <nav class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-yellow-50 transition" href="#home">
+     Home
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-yellow-50 transition" href="#about">
+     About Us
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-yellow-50 transition" href="#products">
+     Products
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-yellow-50 transition" href="#gallery">
+     Gallery
+    </a>
+    <a class="block px-4 py-3 hover:bg-yellow-50 transition" href="#contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative bg-yellow-50 py-16 px-6 sm:px-12 lg:px-20 flex flex-col-reverse lg:flex-row items-center max-w-7xl mx-auto" id="home">
+   <div class="lg:w-1/2 text-center lg:text-left">
+    <h1 class="text-4xl sm:text-5xl font-bold text-yellow-700 mb-4 leading-tight">
+     Authentic Pakistani Mithai
+     <br/>
+     Made with Love &amp; Tradition
+    </h1>
+    <p class="text-lg text-gray-700 mb-8 max-w-md mx-auto lg:mx-0">
+     Experience the rich flavors of classic sweets crafted fresh daily. From creamy barfis to nutty laddoos, Dilpasand Mithai Waly brings you the best of tradition.
+    </p>
+    <a class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-8 py-3 rounded shadow transition" href="#products">
+     Explore Our Sweets
+    </a>
+   </div>
+   <div class="lg:w-1/2 mb-10 lg:mb-0 flex justify-center">
+    <img alt="A colorful traditional platter filled with assorted Pakistani mithai including barfi, laddoo, jalebi, and gulab jamun, decorated with nuts and rose petals" class="rounded-lg shadow-lg max-w-full h-auto" height="400" src="https://storage.googleapis.com/a1aa/image/f7a59783-a47b-4e61-586b-07129ff4d8fc.jpg" width="500"/>
+   </div>
   </section>
-
-  <!-- About -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">About Us</h2>
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="school.jpg" alt="Classroom" class="img-fluid rounded">
-        </div>
-        <div class="col-md-6">
-          <p>We are a forward-thinking school providing high-quality education and personal development for all students. Our focus is on academic excellence, creativity, and moral integrity. Our staff is passionate, skilled, and dedicated to guiding students toward a brighter future.</p>
-        </div>
-      </div>
-    </div>
+  <!-- About Us Section -->
+  <section class="bg-white py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto" id="about">
+   <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-yellow-700 mb-6">
+     About Dilpasand Mithai 
+    </h2>
+    <p class="text-gray-700 text-lg leading-relaxed">
+     Established in 1995, Dilpasand Mithai  has been a beloved name in the community for over 25 years. Our commitment to quality and authentic recipes passed down through generations ensures every bite is a celebration of Pakistani culture and sweetness.
+    </p>
+   </div>
   </section>
-
-  <!-- Courses -->
-  <section id="courses" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Our Courses</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="math.jpg" class="card-img-top" alt="Math">
-            <div class="card-body">
-              <h5 class="card-title">Mathematics</h5>
-              <p class="card-text">Mastering concepts from basic arithmetic to algebra and calculus.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="science.jpg" class="card-img-top" alt="Science">
-            <div class="card-body">
-              <h5 class="card-title">Science</h5>
-              <p class="card-text">Hands-on experiments and theoretical learning in Physics, Chemistry, and Biology.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="student.jpg" class="card-img-top" alt="Computer">
-            <div class="card-body">
-              <h5 class="card-title">Computer Studies</h5>
-              <p class="card-text">Learn coding, web development, and digital literacy from an early age.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Products Section -->
+  <section class="bg-yellow-50 py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto" id="products">
+   <h2 class="text-3xl font-bold text-yellow-700 mb-12 text-center">
+    Our Popular Mithai
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+     <img alt="Close-up image of Kaju Barfi, a creamy cashew nut sweet cut into diamond shapes with a silver leaf garnish" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/4a6a11bd-a635-4068-b9c6-73670d26eca1.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Kaju Barfi
+      </h3>
+      <p class="text-gray-700">
+       Rich and creamy cashew nut fudge, delicately flavored and garnished with edible silver leaf.
+      </p>
+     </div>
     </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Us</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your full name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" placeholder="example@domain.com">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Your Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Type your message here"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Send Message</button>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <img src="school building.jpg" class="img-fluid rounded" alt="School Building">
-        </div>
-      </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+     <img alt="Golden round laddoos made from gram flour and sugar, stacked in a pyramid on a traditional brass plate" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/1e1f0f7b-c2da-4fc5-b080-9e1cc9e9b81c.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Laddoo
+      </h3>
+      <p class="text-gray-700">
+       Soft and sweet gram flour balls infused with cardamom and garnished with chopped pistachios.
+      </p>
+     </div>
     </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+     <img alt="Golden brown round gulab jamuns soaked in rose-flavored sugar syrup served in a white bowl" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/f9e85a1b-3308-41d0-444f-1469574df6a6.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Gulab Jamun
+      </h3>
+      <p class="text-gray-700">
+       Soft, syrup-soaked milk dumplings with a fragrant rose and cardamom syrup.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+     <img alt="Bright orange spiral-shaped jalebis fried to crispiness and soaked in sugar syrup on a traditional metal plate" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/772f60a5-01d8-4050-73aa-d0d7c5eaead8.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Jalebi
+      </h3>
+      <p class="text-gray-700">
+       Crispy, sweet, and sticky spirals soaked in saffron sugar syrup, perfect for any occasion.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+     <img alt="White soft rasmalai balls floating in creamy saffron milk garnished with pistachios and almonds" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/811f339c-514f-499b-d4c1-577855bedec4.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Rasmalai
+      </h3>
+      <p class="text-gray-700">
+       Soft cheese patties soaked in sweetened saffron milk, garnished with nuts.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+     <img alt="Yellow colored besan barfi squares topped with chopped pistachios on a white plate" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/14431a3a-e962-4056-2c44-7402c3f863b8.jpg" width="400"/>
+     <div class="p-6">
+      <h3 class="text-xl font-semibold text-yellow-700 mb-2">
+       Besan Barfi
+      </h3>
+      <p class="text-gray-700">
+       Traditional gram flour fudge with a nutty flavor and a smooth texture.
+      </p>
+     </div>
+    </div>
+   </div>
   </section>
-
+  <!-- Gallery Section -->
+  <section class="bg-white py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto" id="gallery">
+   <h2 class="text-3xl font-bold text-yellow-700 mb-12 text-center">
+    Gallery
+   </h2>
+   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    <img alt="Traditional mithai platter with assorted sweets decorated with rose petals and nuts on a wooden table" class="rounded-lg shadow-md object-cover w-full h-48" height="300" src="https://storage.googleapis.com/a1aa/image/c88eda23-eab4-45cf-10e0-a1f115c5002c.jpg" width="400"/>
+    <img alt="Close-up image of Kaju Barfi squares topped with edible silver leaf on a white plate" class="rounded-lg shadow-md object-cover w-full h-48" height="300" src="https://storage.googleapis.com/a1aa/image/5a6aed34-7ff3-4dae-a074-7a6022c84af6.jpg" width="400"/>
+    <img alt="Golden laddoos stacked in a pyramid shape on a traditional brass plate with a blurred background" class="rounded-lg shadow-md object-cover w-full h-48" height="300" src="https://storage.googleapis.com/a1aa/image/71b06ac2-93ab-4800-c45c-4dd759eb2686.jpg" width="400"/>
+    <img alt="Golden brown gulab jamuns soaked in rose syrup served in a white bowl with rose petals garnish" class="rounded-lg shadow-md object-cover w-full h-48" height="300" src="https://storage.googleapis.com/a1aa/image/be7df375-c14d-4353-9e10-6f66b320bbb3.jpg" width="400"/>
+    <img alt="Bright orange jalebis freshly fried and placed on a wire rack to drain excess oil" class="rounded-lg shadow-md object-cover w-full h-48" height="300" src="https://storage.googleapis.com/a1aa/image/3bac6998-cd8c-43c5-07e5-fc7f46e7ec4d.jpg" width="400"/>
+    <img alt="Soft white rasmalai balls floating in creamy saffron milk garnished with chopped pistachios and almonds" class="rounded-lg shadow-md object-cover w-full h-48" height="300" src="https://storage.googleapis.com/a1aa/image/ccbb22e2-5ec2-409c-87ed-9a0b1174b75c.jpg" width="400"/>
+    <img alt="Yellow besan barfi squares topped with pistachios arranged neatly on a decorative white plate" class="rounded-lg shadow-md object-cover w-full h-48" height="300" src="https://storage.googleapis.com/a1aa/image/715ec64b-b4b0-4c19-0678-cf0e66102774.jpg" width="400"/>
+    <img alt="Interior of a traditional sweet shop with glass display cases filled with assorted mithai and warm lighting" class="rounded-lg shadow-md object-cover w-full h-48" height="300" src="https://storage.googleapis.com/a1aa/image/ccd93a40-8146-4965-0a67-204ab8c3cb16.jpg" width="400"/>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-yellow-50 py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto" id="contact">
+   <h2 class="text-3xl font-bold text-yellow-700 mb-12 text-center">
+    Contact Us
+   </h2>
+   <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
+    <form action="#" class="space-y-6" method="POST">
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="phone">
+       Phone
+      </label>
+      <input class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500" id="phone" name="phone" placeholder="+92 300 1234567" type="tel"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500" id="message" name="message" placeholder="Write your message here..." required="" rows="4"></textarea>
+     </div>
+     <button class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-3 rounded shadow transition" type="submit">
+      Send Message
+     </button>
+    </form>
+    <div class="mt-8 text-center text-gray-700 space-y-2">
+     <p>
+      <i class="fas fa-map-marker-alt text-yellow-600 mr-2">
+      </i>
+      123 Mithai Street Hub, Balochistan, Pakistan
+     </p>
+     <p>
+      <i class="fas fa-phone-alt text-yellow-600 mr-2">
+      </i>
+      +92 335 8540172
+     </p>
+     <p>
+      <i class="fas fa-envelope text-yellow-600 mr-2">
+      </i>
+      info@dilpasandmithai.pk
+     </p>
+    </div>
+   </div>
+  </section>
   <!-- Footer -->
-  <footer class="bg-primary text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 My School. All rights reserved.</p>
+  <footer class="bg-yellow-700 text-yellow-100 py-6 mt-16">
+   <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-sm">
+     © 2024 Dilpasand Mithai . All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="hover:text-yellow-300 transition" href="#">
+      <i class="fab fa-facebook fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-yellow-300 transition" href="#">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="WhatsApp" class="hover:text-yellow-300 transition" href="#">
+      <i class="fab fa-whatsapp fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
   </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
 </html>
